@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scare crow</title>
+  <style>
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+    /* universal */
+    *{
+      font-family: 'Space Mono', monospace;
+      margin: 0;
+      padding: 0;
+    }
+    /* body */
+    .upper-text{
+      font-size: .6em;
+      padding: 30px 70px;
+    }
+
+    .container{
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      margin-top: -6%;
+    }
+    img{
+      width: 65%;
+      padding-left: 25%;
+
+    }
+    .text-contain{
+      display: block;
+      padding-right: 10%;
+    }
+    .heading{
+      font-size: 3em;
+      margin-bottom: 7%;
+    }
+    .paragraph{
+      font-size: 1em;
+      margin-bottom: 7%;
+      width: 60%;
+    }
+    .btn-all{
+      color: white;
+      width: 120px;
+      height: 40px;
+      flex-shrink: 0;
+      font-size: 8px;
+      padding: 5px;
+      background: var(--gray-1, #333);
+    }
+    .underline{
+      font-size: .7em;
+      color: #BDBDBD;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      margin-top: -3%;
+    }
+    span{
+      font-size: 1.3em;
+    }
+    .mobile{
+      visibility: hidden;
+    }
+    /* responsive mobile */
+    @media screen and (max-width:576px) {
+      .container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: -60px;
+      }
+      img{
+        justify-content: center;
+        padding: 0px 17%;
+      }
+      .text-contain{
+        padding: 30px;
+      }
+      .heading{
+        font-size: 2.5em;
+        margin-bottom: 15%;
+      }
+      .paragraph{
+        width: 100%;
+        margin-bottom: 15%;
+        
+      }
+      .btn-all{
+        height: 20%;
+        width: 50%;
+        font-size: .7em;
+      }
+      .upper-text{
+        text-align: left;
+        margin: 0;
+        padding:5% 10%;
+        font-size: .8em;
+    
+      }
+      .underline{
+        display: none;
+      }
+      .mobile{
+        visibility: visible;
+        font-size: .9em;
+        text-align: center;
+        color: #BDBDBD;
+        margin-top: -10%;
+      }
+      span{
+      font-size: 1.2em;
+    }
+
+    }
+
+  </style>
+</head>
+<body>
+  <!-- container to contain everything -->
+  <div class="upper-text">
+    <h2>404 NOT FOUND</h2>
+  </div>
+  
+  <div class="container">
+    <div class="image-scarecrow">
+      <img src="Scarecrow.png" alt="scarecrow">
+    </div>
+    <div class="text-contain">
+      <h1 class="heading">
+        I have bad news for you
+      </h1>
+      <p class="paragraph">
+        the page you're looking for might be removed or is temporarily unavailable
+      </p>
+      <button class="btn-all">BACK TO HOME PAGE</button>
+    </div>
+    
+  </div>
+  <div class="underline">
+    <h4>This page is created by <span>nasimrifat101</span>-devChallenges.io</h4>
+    </div>
+  <!-- mobile -->
+  <div class="mobile">
+
+    <h3 class="mobile">created by <span>nasimrifat101</span>-devChallenges.io</h4>
+  </div>
+</body>
+</html>
